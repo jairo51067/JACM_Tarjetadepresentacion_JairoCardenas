@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444c53;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.contenedor {
+  background-color: #fff;
+  height: 590px;
+  width: 350px;
+  box-shadow: 0 10px 20px #000;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.contenedor:hover .image {
+  opacity: 0.95;
+}
+
+.shape {
+  background-color: #002244;
+  height: 250px;
+  width: 450px;
+  margin-left: -20px;
+  position: relative;
+  top: -80px;
+  box-shadow: 0 2px 15px #000;
+  transform: rotate(25deg);
+}
+
+.image {
+  height: 130px;
+  width: 130px;
+  background-image: url(jairo_A.jpg);
+  position: relative;
+  top: 170px;
+  margin-left: 180px;
+  background-size: cover;
+  border: 2¿none;
+  border-radius: 50%;
+  box-shadow: 0 2px rgb(58, 54, 54);
+  transform: rotate(-20deg);
+
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+  /* transform: scale(0.001); */
+  transform: rotate(-385deg);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 6px;
+  color: #002244;
+}
+
+.css-button {
+  min-width: 80px;
+  height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #212529;
+  z-index: 1;
+}
+.css-button:hover:after {
+  width: 100%;
+  left: 0;
+  /* background: #002244; */
+  background-color: rgb(40, 163, 194);
+}
+.css-button:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #343a40;
+  right: 0;
+}
+/* .css-button:active {
+  top: 2px;
+} */
+
+h3 {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+}
+
+p {
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 2;
+}
+
+.icon_cv {
+  margin-top: 10px;
+}
+
+.icon_cv i {
+  margin-left: 10px;
+  font-size: 40px;
+  transition: 0.3s;
+  color: rgb(40, 163, 194);
+}
+
+.icon_cv i:hover {
+  transform: scale(1.5);
+  color: #002244;
+}
+
+.icons_rds {
+  margin-top: 25px;
+}
+
+.icons_rds i {
+  margin-left: 10px;
+  font-size: 33px;
+  transition: 0.3s;
+  color: rgb(40, 163, 194);
+}
+
+.icons_rds i:hover {
+  transform: scale(1.25);
+  color: #002244;
+}

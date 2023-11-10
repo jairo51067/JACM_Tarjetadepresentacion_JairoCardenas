@@ -1,18 +1,16 @@
-// window.alert("'Hola esta es una tarjeta de presentacion de Jairo Cárdenas'");
+let hideText_btn = document.getElementById('hideText_btn');
 
+let hideText = document.getElementById('hideText');
 
-function mySkills() {
+hideText_btn.addEventListener('click', toggleText);
 
-  document.getElementById("skill").innerHTML = "Web Designer";
+function toggleText(){
+  hideText.classList.toggle('show');
 
-  const elemento = document.getElementById('skill');
-
-  const contenidoOriginal = elemento.innerHTML;
-
-  elemento.innerHTML = " - HTML - CCS - JavaScript - "
-
-  setTimeout(()=>{
-    elemento.innerHTML = contenidoOriginal;
-}, 2500);
-
+  if(hideText.classList.contains('show')){
+    hideText_btn.innerHTML = 'Read Less';
+  }
+  else{
+    hideText_btn.innerHTML = 'skills';
+  }
 }

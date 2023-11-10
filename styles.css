@@ -14,7 +14,7 @@ body {
 
 .contenedor {
   background-color: #fff;
-  height: 590px;
+  height: 600px;
   width: 350px;
   box-shadow: 0 10px 20px #000;
   background-size: cover;
@@ -56,11 +56,18 @@ body {
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
+
+  animation: mymove 5s infinite;
 }
 
-.image:hover {
-  /* transform: scale(0.001); */
+/* .image:hover {
+  transform: scale(0.001); 
   transform: rotate(-385deg);
+ 
+} */
+
+@keyframes mymove{
+  50% {border: 3px solid #fff;}
 }
 
 .title {
@@ -87,6 +94,7 @@ body {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   background: #212529;
   z-index: 1;
+ 
 }
 .css-button:hover:after {
   width: 100%;
@@ -108,19 +116,33 @@ body {
   background-color: #343a40;
   right: 0;
 }
+
 /* .css-button:active {
   top: 2px;
 } */
 
 h3 {
   font-size: 1.75em;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  /* line-height: 2; */
 }
 
 p {
   padding-left: 30px;
   padding-right: 30px;
-  line-height: 2;
+  line-height: 1.5;
+}
+
+.hide{
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(40, 163, 194);
+  margin-bottom: 10px;
+  display: none;
+}
+
+.show{
+  display: block;
 }
 
 .icon_cv {
@@ -135,7 +157,7 @@ p {
 }
 
 .icon_cv i:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
   color: #002244;
 }
 

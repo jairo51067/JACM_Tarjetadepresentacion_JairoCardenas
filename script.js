@@ -51,7 +51,7 @@ function toggleText(){
 
 
 
-function mi_CV(){
-  window.alert("Hola este CV esta actualizado al año 2023");
-}
+// function mi_CV(){
+//   window.alert("Hola este CV esta actualizado al año 2023");
+// }
 

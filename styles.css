@@ -32,23 +32,16 @@ body {
 }
 
 
-/* .contenedor:hover {
-  opacity: 0.95;
-  transform: perspective(600px) rotateY(180deg);
-} */
-
 .shape {
 
   background-image: url(disenyador-web.jpg);
   background-size: cover;
-  /* background-color: #002244; */
   height: 250px;
   width: 450px;
   margin-left: -20px;
   position: relative;
   top: -70px;
   box-shadow: 0 5px 15px #000;
-  /* transform: rotate(25deg); */
 }
 
 .image {
@@ -59,23 +52,13 @@ body {
   top: 190px;
   margin-left: 140px;
   background-size: cover;
-
   border-radius: 50%;
   box-shadow: 0 3px rgb(58, 54, 54);
-  /* transform: rotate(-20deg); */
-
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
-
   animation: mymove 5s infinite;
 }
-
-/* .image:hover {
-  transform: scale(0.001);
-  transform: rotate(-385deg);
-  
-} */
 
 @keyframes mymove {
   50% {
@@ -114,7 +97,6 @@ body {
 .css-button:hover:after {
   width: 100%;
   left: 0;
-  /* background: #002244; */
   background-color: rgb(40, 163, 194);
 }
 
@@ -133,14 +115,9 @@ body {
   right: 0;
 }
 
-/* .css-button:active {
-  top: 2px;
-} */
-
 h3 {
   font-size: 1.75em;
   margin-bottom: 10px;
-  /* line-height: 2; */
 }
 
 p {
@@ -170,15 +147,12 @@ p {
   margin-left: 10px;
   font-size: 40px;
   transition: 0.3s;
-  /* color: rgb(40, 163, 194); */
   color: #000;
 }
 
 .icon_cv i:hover {
   transform: scale(1.25);
   color: rgb(40, 163, 194);
-  /* color: #002244; */
-  /* color: #615e5e; */
 }
 
 .icons_rds {
@@ -189,15 +163,12 @@ p {
   margin-left: 10px;
   font-size: 33px;
   transition: 0.3s;
-  /* color: rgb(40, 163, 194); */
   color: #000;
 }
 
 .icons_rds i:hover {
   transform: scale(1.25);
   color: rgb(40, 163, 194);
-  /* color: #002244; */
-  /* color: #615e5e; */
 }
 
 .icons_vzla {

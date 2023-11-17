@@ -55,4 +55,7 @@ function toggleText(){
 //   window.alert("Hola este CV esta actualizado al año 2023");
 // }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0d2f0d70807bad32f6a52fcf1ed25bde468c894f

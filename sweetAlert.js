@@ -10,11 +10,13 @@
 
 let timerInterval;
 Swal.fire({
-  position: "top", 
   title: "Hola, esta es mi Tarjeta de Presentacion!",
   html: "I will close in <b></b> milliseconds.",
-  timer: 2500,
+  timer: 3000,
   timerProgressBar: true,
+  width:"15em",
+  position:"center",
+  
   didOpen: () => {
     Swal.showLoading();
     const timer = Swal.getPopup().querySelector("b");
@@ -31,6 +33,7 @@ Swal.fire({
     console.log("I was closed by the timer");
   }
 });
+
   
   //Swal.fire({
 	// title:

@@ -53,7 +53,7 @@ function toggleText() {
 
 
 function mi_Cv() {
-  window.alert('Proceder a descargar. " Este CV esta actualizado al año 2023 y contiene version en Español y Ingles " ');  
+  window.alert('Se procedera a descargar el CV. " Este CV esta actualizado V2023_11, Ingles - Español " ');  
 }
 
 

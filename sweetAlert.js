@@ -1,0 +1,93 @@
+// Swal.fire({
+//     position: "top",
+//     icon: "success",
+//     title: "Bienvenido a mi Tarjeta de Presentacion!",
+//     showConfirmButton: false,
+//     backdrop:true,
+//     timer:5000,
+// 	timerProgressBar:true,
+//   });
+
+let timerInterval;
+Swal.fire({
+  position: "top", 
+  title: "Hola, esta es mi Tarjeta de Presentacion!",
+  html: "I will close in <b></b> milliseconds.",
+  timer: 2500,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading();
+    const timer = Swal.getPopup().querySelector("b");
+    timerInterval = setInterval(() => {
+      timer.textContent = `${Swal.getTimerLeft()}`;
+    }, 100);
+  },
+  willClose: () => {
+    clearInterval(timerInterval);
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log("I was closed by the timer");
+  }
+});
+  
+  //Swal.fire({
+	// title:
+	// text:
+	// html:
+	// icon:
+	// confirmButtonText:
+	// footer:
+	// width:
+	// padding:
+	// background:
+	// grow:
+	// backdrop:
+	// timer:
+	// timerProgressBar:
+	// toast:
+	// position:
+	// allowOutsideClick:
+	// allowEscapeKey:
+	// allowEnterKey:
+	// stopKeydownPropagation:
+
+	// input:
+	// inputPlaceholder:
+	// inputValue:
+	// inputOptions:
+	
+	//  customClass:
+	// 	container:
+	// 	popup:
+	// 	header:
+	// 	title:
+	// 	closeButton:
+	// 	icon:
+	// 	image:
+	// 	content:
+	// 	input:
+	// 	actions:
+	// 	confirmButton:
+	// 	cancelButton:
+	// 	footer:	
+
+	// showConfirmButton:
+	// confirmButtonColor:
+	// confirmButtonAriaLabel:
+
+	// showCancelButton:
+	// cancelButtonText:
+	// cancelButtonColor:
+	// cancelButtonAriaLabel:
+	
+	// buttonsStyling:
+	// showCloseButton:
+	// closeButtonAriaLabel:
+
+
+	// imageUrl:
+	// imageWidth:
+	// imageHeight:
+	// imageAlt:

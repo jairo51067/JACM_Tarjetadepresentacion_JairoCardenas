@@ -14,7 +14,7 @@ Swal.fire({
   html: "I will close in <b></b> milliseconds.",
   timer: 3000,
   timerProgressBar: true,
-  width:"15em",
+  width:"20em",
   position:"center",
   
   didOpen: () => {

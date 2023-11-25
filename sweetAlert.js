@@ -10,12 +10,13 @@
 
 let timerInterval;
 Swal.fire({
-  title: "Hola, esta es mi Tarjeta de Presentacion!",
+  title: "¡Bienvenido!",
   html: "I will close in <b></b> milliseconds.",
   timer: 3000,
   timerProgressBar: true,
   width:"20em",
   position:"center",
+  icon:"success",
   
   didOpen: () => {
     Swal.showLoading();

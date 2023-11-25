@@ -127,10 +127,10 @@ p {
 }
 
 .hide {
-  font-weight: bold;
-  font-size: 14px;
+  font-weight:800;
+  font-size: 13px;
   color: rgb(40, 163, 194);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: none;
 }
 
@@ -173,6 +173,7 @@ p {
 .icons_vzla {
   margin-top: 17px;
 }
+
 
 .bandera_vzla{
   animation: mybandera 5s infinite;

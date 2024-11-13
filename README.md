@@ -38,6 +38,7 @@ Contacto
 Si tienes alguna pregunta o quieres ponerte en contacto conmigo, puedes hacerlo a través de:
 •	LinkedIn
 •	GitHub
-•	Correo electrónico: jairocardenas05@gmail.com
+•	Correo electrónico: jairoc.cardenas.dev@gmail.com
+
 
 
